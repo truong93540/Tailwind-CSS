@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import images from '~/asset/images';
 
 // t-[#07a787]
 
@@ -134,38 +135,90 @@ function Home() {
 
         // dark mode
 
-        <div>
-            <div
-                className={`w-[100px] h-[40px] border [#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] inline-block cursor-pointer ${cssBackGroundDarkMode} `}
-                onClick={() => {
-                    if (darkMode == 'light') {
-                        setDarkMode('dark');
-                    } else {
-                        setDarkMode('light');
-                    }
-                }}
-            >
-                <div
-                    className={`w-7 h-7 bg-[#ccc] rounded-full transition-all ${cssPositionTogglerDarkMode} ${cssColorTogglerDarkMode}`}
-                ></div>
-            </div>
-            <div className=" max-w-[1200] grid grid-cols-4 gap-x-5 mx-5 mt-5">
-                <div className={`px-5 py-8 rounded-lg border border-[#eee] ${cssBackGroundDarkMode} transition-all`}>
-                    <img
-                        src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        className="object-fill mb-5"
-                    ></img>
+        // <div>
+        //     <div
+        //         className={`w-[100px] h-[40px] border [#ccc] rounded-full fixed right-5 bottom-5 z-50 p-[5px] inline-block cursor-pointer ${cssBackGroundDarkMode} `}
+        //         onClick={() => {
+        //             if (darkMode == 'light') {
+        //                 setDarkMode('dark');
+        //             } else {
+        //                 setDarkMode('light');
+        //             }
+        //         }}
+        //     >
+        //         <div
+        //             className={`w-7 h-7 bg-[#ccc] rounded-full transition-all ${cssPositionTogglerDarkMode} ${cssColorTogglerDarkMode}`}
+        //         ></div>
+        //     </div>
+        //     <div className=" max-w-[1200] grid grid-cols-4 gap-x-5 mx-5 mt-5">
+        //         <div className={`px-5 py-8 rounded-lg border border-[#eee] ${cssBackGroundDarkMode} transition-all`}>
+        //             <img
+        //                 src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=600"
+        //                 className="object-fill mb-5"
+        //             ></img>
 
-                    <h3 className={`text-lg font-semibold mb-6 ${cssTextDarkMode}`}>Recommendation</h3>
-                    <div className={`text-sm leading-normal ${cssTextDarkMode} font-normal`}>
-                        It is generally considered healthy to include fish in your diet a few times a week, as fish are
-                        rich in essential proteins, healthy fats, and valuable minerals. Since your family eats mostly
-                        meat, it would be beneficial to increase the frequency of fish meals. Ideally, you should
-                        consume fish at least two to three times per week, with each meal containing 100-120 grams of
-                        fish.
-                    </div>
-                </div>
-            </div>
+        //             <h3 className={`text-lg font-semibold mb-6 ${cssTextDarkMode}`}>Recommendation</h3>
+        //             <div className={`text-sm leading-normal ${cssTextDarkMode} font-normal`}>
+        //                 It is generally considered healthy to include fish in your diet a few times a week, as fish are
+        //                 rich in essential proteins, healthy fats, and valuable minerals. Since your family eats mostly
+        //                 meat, it would be beneficial to increase the frequency of fish meals. Ideally, you should
+        //                 consume fish at least two to three times per week, with each meal containing 100-120 grams of
+        //                 fish.
+        //             </div>
+        //         </div>
+        //     </div>
+        // </div>
+
+        // <div className={`max-w-[1140px] mx-auto p-5 flex items-center`}>
+        //     <div className="w-full max-w-[555px]">
+        //         <h1 className="text-[#0B132A] text-[50px] font-medium ">
+        //             Want anything to be easy with <strong>LaslesVPN</strong>
+        //         </h1>
+        //         <p className="text-[#4F5665] mb-[50]">
+        //             Provide a network for all your needs with ease and fun using
+        //             <strong> LaslesVPN</strong> discover interesting features form us
+        //         </p>
+        //         <a
+        //             href="#"
+        //             className="inline-block text-white font-bold p-4 w-full max-w-[250px] bg-[#F53838] rounded-[10px] text-center"
+        //         >
+        //             Get started
+        //         </a>
+        //     </div>
+        //     <div className="pl-10">
+        //         <img src={images.image1} alt="anh1"></img>
+        //     </div>
+        // </div>
+
+        // <div className="m-5 grid auto-cols-[90%] grid-flow-col overflow-x-auto scroll-snap-mandatory scroll-snap-always  gap-x-5">
+        //     <div className="h-[200px] scroll-snap-start">
+        //         <img
+        //             src="https://static.toiimg.com/photo/80387978.cms"
+        //             className="w-full h-full object-cover"
+        //         ></img>
+        //     </div>
+        //     <div className="h-[200px] scroll-snap-start">
+        //         <img
+        //             src="https://static.toiimg.com/photo/80387978.cms"
+        //             className="w-full h-full object-cover"
+        //         ></img>
+        //     </div>
+        //     <div className="h-[200px] scroll-snap-start">
+        //         <img
+        //             src="https://static.toiimg.com/photo/80387978.cms"
+        //             className="w-full h-full object-cover"
+        //         ></img>
+        //     </div>
+        //     <div className="h-[200px] scroll-snap-start">
+        //         <img
+        //             src="https://static.toiimg.com/photo/80387978.cms"
+        //             className="w-full h-full object-cover"
+        //         ></img>
+        //     </div>
+        // </div>
+
+        <div className="bg-grayDark min-h-96">
+            <p>aaaa</p>
         </div>
     );
 }
